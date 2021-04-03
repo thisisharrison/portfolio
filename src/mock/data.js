@@ -21,10 +21,10 @@ export const aboutData = {
   paragraphOne:
     'Motivated full-stack software engineer with a passion for problem solving and product engineering.',
   paragraphTwo:
-    'My solid experience in the e-commerce industry enabled me to understand business processes and anticipate users’ requirements. With a strong interest in systems and optimization, I incorporated programming tools to automate and streamline workflows, develop data analytic tools, and increase efficiency to deliver value to the business.',
+    'My solid experience in the e-commerce industry enable me to understand business processes and anticipate users’ requirements. With a strong interest in systems and optimization, I incorporated programming tools to automate and streamline workflows, developed data analytic tools, and increased operation efficiency.',
   // 'Prior to pursuing my passion for software, I incorporated programming tools to automate and streamline workflows, and developed data analytics tools in the e-commerce industry.',
   paragraphThree:
-    "My keen interest digital products and solving users' problems have led me to pursure a career for software.",
+    "My keen interest in digital products and solving users' problems have led me to pursure a career in software.",
   resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
 };
 
