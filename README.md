@@ -23,7 +23,7 @@ $ npm run develop
 
 ## Status
 
-[![Netlify Status]()]()
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dc81506d-3d2b-4ae1-b9de-1fae848b0108/deploy-status)](https://app.netlify.com/sites/harrisonlauportfolio/deploys)
 
 ## Acknowledgments 🎁
 
