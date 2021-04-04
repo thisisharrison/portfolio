@@ -5000,6 +5000,11 @@
     "tmp" "^0.0.33"
     "tslib" "^1.10.0"
 
+"devicon@^2.10.1":
+  "integrity" "sha512-9W2Vy8BVN+MWLvrMKPtL0EgEMiYDx5gu69/HFuXiEe+tm0QhGzx7rWKlakH8RWHtQ4tzK7+AUFs9OkKko+wh3w=="
+  "resolved" "https://registry.npmjs.org/devicon/-/devicon-2.10.1.tgz"
+  "version" "2.10.1"
+
 "diff-sequences@^25.2.6":
   "integrity" "sha512-Hq8o7+6GaZeoFjtpgvRBUknSXNeJiCx7V9Fr94ZMljNiCr9n9L8H8aJqgWOQiDDGdyn29fRNcDdRVJ5fdyihfg=="
   "resolved" "https://registry.yarnpkg.com/diff-sequences/-/diff-sequences-25.2.6.tgz"
