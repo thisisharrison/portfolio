@@ -7,7 +7,7 @@
     font-size: 4rem;
     padding: 0 0.8rem 0 0.8rem;
     cursor: pointer;
-    background: -webkit-linear-gradient($primary-color, $secondary-color);
+    background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
