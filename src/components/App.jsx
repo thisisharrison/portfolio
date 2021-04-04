@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Hero from './Hero/Hero';
 import About from './About/About';
+import Education from './Education/Education';
 import Skills from './Skills/Skills'
 import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
@@ -8,11 +9,12 @@ import Footer from './Footer/Footer';
 
 import { PortfolioProvider } from '../context/context';
 
-import { heroData, aboutData, projectsData, skillsData, contactData, footerData } from '../mock/data';
+import { heroData, aboutData, educationData, projectsData, skillsData, contactData, footerData } from '../mock/data';
 
 function App() {
   const [hero, setHero] = useState({});
   const [about, setAbout] = useState({});
+  const [education, setEducation] = useState({});
   const [skills, setSkills] = useState([]);
   const [projects, setProjects] = useState([]);
   const [contact, setContact] = useState({});
@@ -21,6 +23,7 @@ function App() {
   useEffect(() => {
     setHero({ ...heroData });
     setAbout({ ...aboutData });
+    setEducation({...educationData});
     setSkills([...skillsData]);
     setProjects([...projectsData]);
     setContact({ ...contactData });
@@ -28,9 +31,10 @@ function App() {
   }, []);
 
   return (
-    <PortfolioProvider value={{ hero, about, projects, contact, skills, footer }}>
+    <PortfolioProvider value={{ hero, about, education, projects, contact, skills, footer }}>
       <Hero />
       <About />
+      <Education />
       <Projects />
       <Skills />
       <Contact />

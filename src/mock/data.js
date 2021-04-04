@@ -135,3 +135,53 @@ export const skillsData = [
   { id: nanoid(), name: 'SQLalchemy', icon: 'sqlalchemy' },
   { id: nanoid(), name: 'jQuery', icon: 'jquery' },
 ];
+
+// EDUCATION DATA
+export const educationData = {
+  schools: [
+    {
+      id: nanoid(),
+      name: 'App Academy Open',
+      url: 'https://www.appacademy.io/course/app-academy-open',
+      description: 'Software Engineering Immersive',
+      year: '2021',
+    },
+    {
+      id: nanoid(),
+      name: 'Ivey Business School',
+      url: 'https://www.ivey.uwo.ca/',
+      description: 'Honors Business Administration',
+      year: '2015',
+    },
+  ],
+  certifications: [
+    {
+      id: nanoid(),
+      name: 'Hack Reactor Professional Development',
+      url: 'https://www.hackreactor.com/professional-development-software-engineering',
+      description: 'Algorithms and Data Structures',
+      year: '2021',
+    },
+    {
+      id: nanoid(),
+      name: 'HarvardX',
+      url: 'https://www.edx.org/school/harvardx',
+      description: 'Computer Science for Web Programming',
+      year: '2020',
+    },
+    {
+      id: nanoid(),
+      name: 'Scrum.org',
+      url: 'https://www.scrum.org/',
+      description: 'Professional Scrum Product Owner',
+      year: '2020',
+    },
+    {
+      id: nanoid(),
+      name: 'Scrum.org',
+      url: 'https://www.scrum.org/',
+      description: 'Professional Scrum Master',
+      year: '2020',
+    },
+  ],
+};
