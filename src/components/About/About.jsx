@@ -1,5 +1,6 @@
 import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
+import { Link } from 'react-scroll';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
@@ -7,7 +8,7 @@ import PortfolioContext from '../../context/context';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
-  const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = about;
+  const { img, paragraphOne, paragraphTwo, paragraphThree, paragraphFour, technologies, resume } = about;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -40,6 +41,21 @@ const About = () => {
                 <p className="about-wrapper__info-text">{paragraphOne}</p>
                 <p className="about-wrapper__info-text">{paragraphTwo}</p>
                 <p className="about-wrapper__info-text">{paragraphThree}</p>
+                
+                <p className="about-wrapper__info-text">{paragraphFour}</p>
+                <ul className="about-wrapper__skills">
+                  {technologies && technologies.map((tech) => (
+                    <li 
+                      key={`about-me-${tech}`}
+                    >
+                      {tech}
+                    </li>
+                  ))}
+                  <li>
+                    <Link to="skills" smooth duration={1000} className="underscore-links">View all</Link>
+                  </li>
+                </ul>
+
                 {resume && (
                   <span className="d-flex mt-3">
                     <a
@@ -50,6 +66,7 @@ const About = () => {
                     >
                       Resume
                     </a>
+
                   </span>
                 )}
               </div>

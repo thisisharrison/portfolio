@@ -21,10 +21,20 @@ export const aboutData = {
   paragraphOne:
     'Motivated full-stack software engineer with a passion for problem solving and product engineering.',
   paragraphTwo:
-    'My solid experience in the e-commerce industry enable me to understand business processes and anticipate users’ requirements. With a strong interest in systems and optimization, I incorporated programming tools to automate and streamline workflows, developed data analytic tools, and increased operation efficiency.',
+    'My solid experience in the e-commerce industry enable me to understand business processes and anticipate users’ requirements. With a strong interest in systems and optimization, I have incorporated programming tools to automate and streamline workflows, developed data analytic tools, and increased operation efficiency.',
   // 'Prior to pursuing my passion for software, I incorporated programming tools to automate and streamline workflows, and developed data analytics tools in the e-commerce industry.',
   paragraphThree:
     "My keen interest in digital products and solving users' problems have led me to pursure a career in software.",
+  paragraphFour: "Here are a few technologies I've been working with recently:",
+  technologies: [
+    'Javascript',
+    'Node.js',
+    'React',
+    'Redux',
+    'Ruby',
+    'Rails',
+    'Python',
+  ],
   resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
 };
 
@@ -99,3 +109,29 @@ export const footerData = {
 export const githubButtons = {
   isEnabled: false, // set to false to disable the GitHub stars/fork buttons
 };
+
+// SKILLS DATA
+export const skillsData = [
+  { id: nanoid(), name: 'Bootstrap', icon: 'bootstrap' },
+  { id: nanoid(), name: 'CSS3', icon: 'css3' },
+  { id: nanoid(), name: 'Django', icon: 'django' },
+  { id: nanoid(), name: 'Express', icon: 'express' },
+  { id: nanoid(), name: 'Flask', icon: 'flask' },
+  { id: nanoid(), name: 'Gatsby', icon: 'gatsby' },
+  { id: nanoid(), name: 'Git', icon: 'git' },
+  { id: nanoid(), name: 'GitHub', icon: 'github' },
+  { id: nanoid(), name: 'HTML5', icon: 'html5' },
+  { id: nanoid(), name: 'Javascript', icon: 'javascript' },
+  { id: nanoid(), name: 'Material UI', icon: 'materialui' },
+  { id: nanoid(), name: 'MongoDB', icon: 'mongodb' },
+  { id: nanoid(), name: 'Node.js', icon: 'nodejs' },
+  { id: nanoid(), name: 'PostgreSQL', icon: 'postgresql' },
+  { id: nanoid(), name: 'Python', icon: 'python' },
+  { id: nanoid(), name: 'Rails', icon: 'rails' },
+  { id: nanoid(), name: 'React', icon: 'react' },
+  { id: nanoid(), name: 'Redux', icon: 'redux' },
+  { id: nanoid(), name: 'Ruby', icon: 'ruby' },
+  { id: nanoid(), name: 'SASS', icon: 'sass' },
+  { id: nanoid(), name: 'SQLalchemy', icon: 'sqlalchemy' },
+  { id: nanoid(), name: 'jQuery', icon: 'jquery' },
+];

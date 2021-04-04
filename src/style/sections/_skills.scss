@@ -1,0 +1,14 @@
+#skills {
+  margin-top: -15rem;
+  padding-top: 15rem;
+  margin-bottom: 15rem;
+
+  .skills-icon {
+    font-size: 4rem;
+    padding: 0 0.8rem 0 0.8rem;
+    cursor: pointer;
+    background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
