@@ -135,3 +135,47 @@ export const skillsData = [
   { id: nanoid(), name: 'SQLalchemy', icon: 'sqlalchemy' },
   { id: nanoid(), name: 'jQuery', icon: 'jquery' },
 ];
+
+// EDUCATION DATA
+export const educationData = {
+  schools: [
+    {
+      id: nanoid(),
+      name: 'App Academy Open',
+      description: 'Software Engineering Immersive',
+      year: '2021',
+    },
+    {
+      id: nanoid(),
+      name: 'Ivey Business School',
+      description: 'Honors Business Administration',
+      year: '2015',
+    },
+  ],
+  certifications: [
+    {
+      id: nanoid(),
+      name: 'Hack Reactor Professional Development',
+      description: 'Algorithms and Data Structures',
+      year: '2021',
+    },
+    {
+      id: nanoid(),
+      name: 'HarvardX',
+      description: 'Computer Science for Web Programming',
+      year: '2020',
+    },
+    {
+      id: nanoid(),
+      name: 'Scrum.org',
+      description: 'Professional Scrum Product Owner',
+      year: '2020',
+    },
+    { 
+      id: nanoid(), 
+      name: 'Scrum.org', 
+      description: 'Professional Scrum Master', 
+      year: '2020' 
+    },
+  ],
+};
