@@ -8,7 +8,7 @@ import PortfolioContext from '../../context/context';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
-  const { img, paragraphOne, paragraphTwo, paragraphThree, paragraphFour, tech, resume } = about;
+  const { img, paragraphOne, paragraphTwo, paragraphThree, paragraphFour, technologies, resume } = about;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -43,8 +43,18 @@ const About = () => {
                 <p className="about-wrapper__info-text">{paragraphThree}</p>
                 
                 <p className="about-wrapper__info-text">{paragraphFour}</p>
-                <pre>{JSON.stringify(tech, undefined, 2)}</pre>
-                <Link to="skills">View all technologies</Link>
+                <ul className="about-wrapper__skills">
+                  {technologies && technologies.map((tech) => (
+                    <li 
+                      key={`about-me-${tech}`}
+                    >
+                      {tech}
+                    </li>
+                  ))}
+                  <li>
+                    <Link to="skills" smooth duration={1000} className="underscore-links">View all</Link>
+                  </li>
+                </ul>
 
                 {resume && (
                   <span className="d-flex mt-3">
@@ -56,6 +66,7 @@ const About = () => {
                     >
                       Resume
                     </a>
+
                   </span>
                 )}
               </div>

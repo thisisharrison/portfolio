@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Merriweather:wght@300&family=Source+Code+Pro&display=swap');
+
+
+// font-family: 'Merriweather', serif;
+// font-family: 'Fira Code', monospace;
+
 
 h1 {
   font-weight: 700;
@@ -6,8 +14,20 @@ h1 {
 
 p,
 a {
-  font-family: 'Montserrat', sans-serif;
   font-size: $default-font-size;
+}
+
+small {
+  font-size: $small-font-size;
+  margin-bottom: 2rem;
+}
+
+p, small {
+  font-family: 'Merriweather', serif;
+}
+
+a {
+  font-family: 'Montserrat', sans-serif;
 }
 
 a,
@@ -51,5 +71,18 @@ a:hover {
 
   &:hover {
     transform: translateX(2px);
+  }
+
+}
+
+.underscore-links {
+  transition: all 0.4s;
+  &:hover,
+  &:active {
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-line: underline;
+    text-underline-position: below;
+    text-underline-offset: 1;
   }
 }
