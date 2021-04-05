@@ -1,25 +1,30 @@
-import React, { useState } from 'react'
+import React, { useContext } from 'react'
+import { ThemeContext } from '../../context/context'
 import Toggle from 'react-toggle'
 import "./toggle.css" 
 import sun from '../../images/sun.png';
 import moon from '../../images/moon.png';
 
 const ThemeToggle = () => {
-  const [newTheme, setNewTheme] = useState('light')
+  const { theme, setTheme } = useContext(ThemeContext)
 
   const handleChangeTheme = () => {
-    if (newTheme === 'light') {
-      setNewTheme('dark')
+    if (theme === 'light') {
+      setTheme('dark')
+      window.__setPreferredTheme('dark')
     } else {
-      setNewTheme('light')
+      setTheme('light')
+      window.__setPreferredTheme('light')
     }
+    // debugging
+    console.log(theme)
   }
 
   
   return (
     <div className="theme-toggle-wrapper">
       <Toggle
-        defaultChecked={newTheme}
+        defaultChecked={theme === 'dark'}
         icons={{checked: 
                   <img
                     src={moon}

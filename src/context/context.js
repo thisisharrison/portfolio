@@ -1,7 +1,7 @@
 import React from 'react';
 
 const PortfolioContext = React.createContext();
-const ThemeContext = React.createContext('light');
+export const ThemeContext = React.createContext();
 
 export const PortfolioProvider = PortfolioContext.Provider;
 export const PortfolioConsumer = PortfolioContext.Consumer;
