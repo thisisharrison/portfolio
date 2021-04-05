@@ -11,6 +11,7 @@ const Projects = () => {
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [isAnimate, setAnimate] = useState({})
 
   useEffect(() => {
     if (window.innerWidth > 769) {
@@ -22,13 +23,17 @@ const Projects = () => {
     }
   }, []);
 
+  const handleMouseOver = (img) => {
+    setAnimate({[img]: true})
+  }
+
   return (
     <section id="projects">
       <Container>
         <div className="project-wrapper">
           <Title title="Projects" />
           {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
+            const { title, info, info2, url, repo, img, video, id } = project;
 
             return (
               <Row key={id}>
@@ -76,13 +81,17 @@ const Projects = () => {
                     delay={1000}
                     distance="30px"
                   >
-                    <div className="project-wrapper__image">
+                    <div className="project-wrapper__image"
+                      onMouseEnter={() => handleMouseOver(img)}
+                      onMouseLeave={() => setAnimate({})}
+                      >
                       <a
                         href={url || '#!'}
                         target="_blank"
                         aria-label="Project Link"
                         rel="noopener noreferrer"
                       >
+                        {/* {img in isAnimate && video.length > 0 ? <h1>video</h1> :  */}
                         <Tilt
                           options={{
                             reverse: false,
@@ -100,6 +109,7 @@ const Projects = () => {
                             <ProjectImg alt={title} filename={img} />
                           </div>
                         </Tilt>
+                        {/* } */}
                       </a>
                     </div>
                   </Fade>

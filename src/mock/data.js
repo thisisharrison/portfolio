@@ -42,7 +42,8 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'lulukittens.png',
+    video: '',
     title: 'lulukittens',
     info:
       'A class booking platform for trainers and students. Created as mini-site for an e-commerce brand to tie community and commerce.',
@@ -52,17 +53,19 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'algocafe.png',
+    video: '',
     title: 'Algo Visualizer',
     info:
       'An algorithm visualizer to educate users on how different algorithms work and the differences in their run time.',
-    info2: 'Build with React and Redux.',
+    info2: 'Built with React and Redux.',
     url: 'https://thisisharrison.github.io/algo-visualizer/',
     repo: 'https://github.com/thisisharrison/algo-visualizer', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'solutionbase.png',
+    video: '',
     title: 'SolutionBase',
     info:
       'An idea exchange application targeting problem-solvers to brainstorm solutions to United Nations 17 Sustainable Development Goals.',
@@ -70,6 +73,26 @@ export const projectsData = [
     url: 'https://solution-base.herokuapp.com/',
     repo: 'https://github.com/thisisharrison/solution-base', // if no repo, the button will not show up
   },
+  // {
+  //   id: nanoid(),
+  //   img: 'project.jpg',
+  //   title: 'jQuery Games',
+  //   info:
+  //     'Games like Snake and Tower of Hanoi build with jQuery.',
+  //   info2: '',
+  //   url: '',
+  //   repo: 'https://github.com/thisisharrison/app-academy/tree/master/Javascript/3_jQuery', // if no repo, the button will not show up
+  // },
+  // {
+  //   id: nanoid(),
+  //   img: 'digitaltools.png',
+  //   title: 'Digital Tools',
+  //   info:
+  //     'An interal business tool for website merchandisers to streamline operation process, QA data and automate tasks.',
+  //   info2: 'Built with Python, Flasks, and Boostrap',
+  //   url: 'http://digital-tools-app.herokuapp.com/',
+  //   repo: 'https://github.com/thisisharrison/digital-tools', // if no repo, the button will not show up
+  // },
 ];
 
 // CONTACT DATA
