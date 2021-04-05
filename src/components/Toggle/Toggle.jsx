@@ -11,10 +11,10 @@ const ThemeToggle = () => {
   const handleChangeTheme = () => {
     if (theme === 'light') {
       setTheme('dark')
-      window.__setPreferredTheme('dark')
+      __setPreferredTheme('dark')
     } else {
       setTheme('light')
-      window.__setPreferredTheme('light')
+      __setPreferredTheme('light')
     }
     // debugging
     console.log(theme)
