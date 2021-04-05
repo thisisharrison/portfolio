@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Toggle from './Toggle/Toggle'
 import Hero from './Hero/Hero';
 import About from './About/About';
 import Education from './Education/Education';
@@ -7,7 +8,7 @@ import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
 
-import { PortfolioProvider } from '../context/context';
+import { PortfolioProvider, ThemeProvider } from '../context/context';
 
 import { heroData, aboutData, educationData, projectsData, skillsData, contactData, footerData } from '../mock/data';
 
@@ -19,6 +20,7 @@ function App() {
   const [projects, setProjects] = useState([]);
   const [contact, setContact] = useState({});
   const [footer, setFooter] = useState({});
+  const [theme, setTheme] = useState(null)
 
   useEffect(() => {
     setHero({ ...heroData });
@@ -32,13 +34,16 @@ function App() {
 
   return (
     <PortfolioProvider value={{ hero, about, education, projects, contact, skills, footer }}>
-      <Hero />
-      <About />
-      <Education />
-      <Projects />
-      <Skills />
-      <Contact />
-      <Footer />
+      <ThemeProvider value={{ theme }}>
+        <Toggle />
+        <Hero />
+        <About />
+        <Education />
+        <Projects />
+        {/* <Skills /> */}
+        <Contact />
+        <Footer />
+      </ThemeProvider>
     </PortfolioProvider>
   );
 }
