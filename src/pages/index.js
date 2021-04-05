@@ -11,7 +11,7 @@ import '../style/dark.scss'
 export default () => {
   const { title, lang, description } = headData;
 
-  const [theme, setTheme] = useState(() => __theme);
+  const [theme, setTheme] = useState(() => window ? window.__theme : 'light');
   const value = { theme, setTheme };
 
   return (
