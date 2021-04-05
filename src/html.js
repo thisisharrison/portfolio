@@ -27,6 +27,8 @@ export default function HTML({
           dangerouslySetInnerHTML={{
             __html: `
               (function() {
+                if (typeof window === undefined) return; 
+
                 window.__onThemeChange = function() {};
                 
                 function setTheme(newTheme) {
