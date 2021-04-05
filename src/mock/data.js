@@ -43,6 +43,7 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'lulukittens.png',
+    video: '',
     title: 'lulukittens',
     info:
       'A class booking platform for trainers and students. Created as mini-site for an e-commerce brand to tie community and commerce.',
@@ -53,6 +54,7 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'algocafe.png',
+    video: '',
     title: 'Algo Visualizer',
     info:
       'An algorithm visualizer to educate users on how different algorithms work and the differences in their run time.',
@@ -63,6 +65,7 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'solutionbase.png',
+    video: '',
     title: 'SolutionBase',
     info:
       'An idea exchange application targeting problem-solvers to brainstorm solutions to United Nations 17 Sustainable Development Goals.',
