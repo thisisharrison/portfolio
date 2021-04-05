@@ -13,7 +13,7 @@ const Skills = () => {
       <Container>
         <Title title="Skills" />
         <Fade bottom duration={1000} delay={800} distance="30px">
-          <div>
+          <div className="skills-wrapper">
             {skills.map((skill) => {
               const { id, icon, name } = skill;
               return (

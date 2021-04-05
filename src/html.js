@@ -5,6 +5,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+// Theme change forked from https://github.com/gaearon/overreacted.io/
 export default function HTML({
   htmlAttributes,
   headComponents,
@@ -22,6 +23,43 @@ export default function HTML({
         {headComponents}
       </head>
       <body {...bodyAttributes}>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                if (typeof window === undefined) return; 
+
+                window.__onThemeChange = function() {};
+                
+                function setTheme(newTheme) {
+                  window.__theme = newTheme;
+                  preferredTheme = newTheme;
+                  document.body.className = newTheme;
+                  window.__onThemeChange(newTheme);
+                }
+                
+                let preferredTheme;
+                try {
+                  preferredTheme = localStorage.getItem('theme');
+                } catch (err) { }
+
+                window.__setPreferredTheme = function(newTheme) {
+                  setTheme(newTheme);
+                  try {
+                    localStorage.setItem('theme', newTheme);
+                  } catch (err) {}
+                }
+
+                let darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+                darkQuery.addListener(function(e) {
+                  window.__setPreferredTheme(e.matches ? 'dark' : 'light')
+                });
+                
+                setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'));
+              })();
+            `,
+          }}
+        />
         {preBodyComponents}
         <div key="body" id="___gatsby" dangerouslySetInnerHTML={{ __html: body }} />
         {postBodyComponents}

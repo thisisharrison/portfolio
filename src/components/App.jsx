@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Toggle from './Toggle/Toggle'
 import Hero from './Hero/Hero';
 import About from './About/About';
 import Education from './Education/Education';
@@ -32,6 +33,7 @@ function App() {
 
   return (
     <PortfolioProvider value={{ hero, about, education, projects, contact, skills, footer }}>
+      <Toggle />
       <Hero />
       <About />
       <Education />
