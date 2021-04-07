@@ -82,7 +82,6 @@
       display: grid;
       padding: 0px;
       grid-template-columns: repeat(2, 1fr);
-      // margin: 20px 0px 0px;
       overflow: hidden;
       list-style: none;
       text-align: left;
@@ -109,12 +108,38 @@
           color: rgb(100, 255, 218);
           cursor: pointer;
           font-size: 1.5rem;
+          text-decoration: underline;
+          text-underline-offset: 15%;
           &:hover {
-            text-decoration: underline;
-            text-underline-offset: 15%;
+            text-decoration: none;
           }
         }
       }
+    }
+  }
+  .about-bottom {
+    display: grid;
+    padding: 0px;
+    margin-top: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    place-items: center start;
+  }
+  .about-wrapper__contact {
+    text-align: left;
+
+    h3 {
+      font-weight: bold;
+      font-size: $mid-font-size;
+      @include respond (phone) {
+        font-size: 2rem;
+      }
+    }
+    p, a {
+      font-size: 1.5rem;
+      font-family: 'Montserrat', sans-serif;
+      color: #CCD6F6 !important;
+      margin: 0;
     }
   }
 }

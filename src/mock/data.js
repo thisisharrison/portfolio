@@ -19,23 +19,17 @@ export const heroData = {
 export const aboutData = {
   img: 'profile.jpeg',
   paragraphOne:
-    'Motivated full-stack software engineer with a passion for problem solving and product engineering.',
+    'Motivated full-stack software engineer with a passion for problem solving and digital products.',
   paragraphTwo:
-    'My solid experience in the e-commerce industry enable me to understand business processes and anticipate users’ requirements. With a strong interest in systems and optimization, I have incorporated programming tools to automate and streamline workflows, developed data analytic tools, and increased operation efficiency.',
-  // 'Prior to pursuing my passion for software, I incorporated programming tools to automate and streamline workflows, and developed data analytics tools in the e-commerce industry.',
+    `My solid experience in the e-commerce industry enables me to understand business processes and anticipate users’ requirements. 
+    With a strong interest in systems and optimization, I have incorporated programming in automating workflows, 
+    developing data analytic tools, and increasing operation efficiency.`,
+  // V2: 'Prior to pursuing my passion for software, I incorporated programming tools to automate and streamline workflows, and developed data analytics tools in the e-commerce industry.',
   paragraphThree:
-    "My keen interest in digital products and solving users' problems have led me to pursure a career in software.",
+    "My keen interest in product engineering and solving users' problems have led me to pursue a career in software.",
   paragraphFour: "Here are a few technologies I've been working with recently:",
-  technologies: [
-    'Javascript',
-    'Node.js',
-    'React',
-    'Redux',
-    'Ruby',
-    'Rails',
-    'Python',
-  ],
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  technologies: ['Javascript', 'Node.js', 'React', 'Redux', 'Ruby', 'Rails', 'Python'],
+  resume: 'https://www.dropbox.com/s/krtegk2b287cpop/Harrison_Lau.pdf?dl=0', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
@@ -99,6 +93,7 @@ export const projectsData = [
 export const contactData = {
   cta: '',
   btn: '',
+  fullname: 'Harrison Lau',
   email: 'harrison.lau@outlook.com',
 };
 

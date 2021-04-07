@@ -7,8 +7,9 @@ import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
 
 const About = () => {
-  const { about } = useContext(PortfolioContext);
+  const { about, contact } = useContext(PortfolioContext);
   const { img, paragraphOne, paragraphTwo, paragraphThree, paragraphFour, technologies, resume } = about;
+  const { fullname, email } = contact;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -55,20 +56,28 @@ const About = () => {
                     <Link to="skills" smooth duration={1000} className="underscore-links">View all</Link>
                   </li>
                 </ul>
+                
+                <div className="about-bottom">
+                  <div className="about-wrapper__contact">
+                    <h3>Contact Details</h3>
+                    <p>{fullname}</p>
+                    <a href={`mailto:${email}`}>{email}</a>
+                  </div>
 
-                {resume && (
-                  <span className="d-flex mt-3">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="cta-btn cta-btn--resume"
-                      href={resume}
-                    >
-                      Resume
-                    </a>
+                  {resume && (
+                    <span className="d-flex mt-3">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="cta-btn cta-btn--resume"
+                        href={resume}
+                        >
+                        Resume
+                      </a>
 
-                  </span>
-                )}
+                    </span>
+                  )}
+                </div>
               </div>
             </Fade>
           </Col>
