@@ -5,8 +5,9 @@ import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 
 const Contact = () => {
-  const { contact } = useContext(PortfolioContext);
-  const { cta, btn, email } = contact;
+  const { contact, about } = useContext(PortfolioContext);
+  const { fullname, email } = contact;
+  const { resume } = about;
 
   return (
     <section id="contact">
@@ -15,15 +16,20 @@ const Contact = () => {
         <Fade bottom duration={1000} delay={800} distance="30px">
           <div className="contact-wrapper">
             <p className="contact-wrapper__text">
-              {cta || 'Would you like to work with me? Awesome!'}
+              {fullname}
+            </p>
+            <p className="contact-wrapper__link">
+              <a href={`mailto:${email}`}>
+              <i className="fa fa-envelope fa-md"></i>{' '}{email}
+              </a>
             </p>
             <a
               target="_blank"
               rel="noopener noreferrer"
               className="cta-btn cta-btn--resume"
-              href={`mailto:${email}`}
-            >
-              {btn || "Let's Talk"}
+              href={resume}
+              >
+              Resume
             </a>
           </div>
         </Fade>

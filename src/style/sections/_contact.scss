@@ -18,9 +18,12 @@
     margin-top: 3.2rem;
     padding: 0 2rem;
     backface-visibility: hidden;
+    font-size: 2.4rem;
 
     &__text {
-      margin-bottom: 2.5rem;
+      margin-bottom: 1rem;
+      font-family: 'Montserrat', sans-serif;
+      color: $white-color;
     }
 
     &__text,
@@ -31,6 +34,17 @@
       @include respond(phone) {
         font-size: 2rem;
       }
+    }
+    
+    &__link {
+      a {
+        text-decoration: underline;
+        text-underline-offset: 15%;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      margin-bottom: 2.5rem;
     }
   }
 }
