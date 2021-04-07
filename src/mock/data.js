@@ -40,8 +40,8 @@ export const projectsData = [
     video: '',
     title: 'lulukittens',
     info:
-      'A class booking platform for trainers and students. Created as mini-site for an e-commerce brand to tie community and commerce.',
-    info2: 'Built with MERN, Redux, Material-UI, and Styled-Components.',
+      'A class booking platform for trainers and students. Created as mini-site for an e-commerce brand to connect community and commerce.',
+    info2: 'React, Redux, MongoDB, Express, Node.js',
     url: 'https://hidden-retreat-15215.herokuapp.com/',
     repo: 'https://github.com/thisisharrison/class-pass-app', // if no repo, the button will not show up
   },
@@ -51,8 +51,8 @@ export const projectsData = [
     video: '',
     title: 'Algo Visualizer',
     info:
-      'An algorithm visualizer to educate users on how different algorithms work and the differences in their run time.',
-    info2: 'Built with React and Redux.',
+      'An algorithm visualizer to educate users on how different sorting algorithms work and the differences of their run time.',
+    info2: 'React, Redux',
     url: 'https://thisisharrison.github.io/algo-visualizer/',
     repo: 'https://github.com/thisisharrison/algo-visualizer', // if no repo, the button will not show up
   },
@@ -63,7 +63,7 @@ export const projectsData = [
     title: 'SolutionBase',
     info:
       'An idea exchange application targeting problem-solvers to brainstorm solutions to United Nations 17 Sustainable Development Goals.',
-    info2: 'Built with Ruby, Ruby on Rails, React, Redux, Boostrap, and Styled-Components',
+    info2: 'React, Redux, Ruby, Ruby on Rails, PostgreSQL',
     url: 'https://solution-base.herokuapp.com/',
     repo: 'https://github.com/thisisharrison/solution-base', // if no repo, the button will not show up
   },
