@@ -40,8 +40,10 @@
       a {
         text-decoration: underline;
         text-underline-offset: 15%;
+        color: $white-color;
         &:hover {
           text-decoration: none;
+          color: $white-color;
         }
       }
       margin-bottom: 2.5rem;

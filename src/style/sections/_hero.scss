@@ -89,7 +89,7 @@
 .dark #hero {
   background: transparent;
   h1 {
-    color: #CCD6F6;
+    color: $light-purple-text;
     transition: color .5s ease-in-out;
   }
   .down-to-about i {

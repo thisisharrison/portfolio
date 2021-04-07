@@ -20,3 +20,8 @@
     -webkit-text-fill-color: transparent;
   }
 }
+.dark #skills {
+  .skills-icon {
+    background-image: linear-gradient(135deg, $dark-primary-color 0%, $dark-secondary-color 100%);
+  }
+}

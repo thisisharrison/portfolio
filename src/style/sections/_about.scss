@@ -98,14 +98,14 @@
           content: "▹";
           position: absolute;
           left: 0px;
-          color: rgb(100, 255, 218);
+          color: $green-text;
           font-size: 1.5rem;
           line-height: 1.6rem;
         }
 
         a {
           font-family: 'Fira Code', monospace;
-          color: rgb(100, 255, 218);
+          color: $green-text;
           cursor: pointer;
           font-size: 1.5rem;
           text-decoration: underline;
@@ -139,7 +139,7 @@
     p, a {
       font-size: 1.5rem;
       font-family: 'Montserrat', sans-serif;
-      color: #CCD6F6 !important;
+      color: $light-purple-text !important;
       margin: 0;
     }
   }
