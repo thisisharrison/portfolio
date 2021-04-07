@@ -23,6 +23,7 @@ const Footer = () => {
           {networks &&
             networks.map((network) => {
               const { id, name, url } = network;
+              if (url === '') return
               return (
                 <a key={id} href={url} rel="noopener noreferrer" target="_blank" aria-label={name}>
                   <i className={`fa fa-${name} fa-inverse`} />
