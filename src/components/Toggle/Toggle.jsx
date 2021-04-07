@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { ThemeContext } from '../../context/context'
 import Toggle from 'react-toggle'
 import "./toggle.css" 
@@ -16,8 +16,6 @@ const ThemeToggle = () => {
       setTheme('light')
       __setPreferredTheme('light')
     }
-    // debugging
-    console.log(theme)
   }
 
   
