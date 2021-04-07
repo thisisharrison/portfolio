@@ -5,8 +5,9 @@ import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 
 const Header = () => {
-  const { hero } = useContext(PortfolioContext);
-  const { title, name, subtitle, cta } = hero;
+  const { hero, footer } = useContext(PortfolioContext);
+  const { title, name, subtitle } = hero;
+  const { networks } = footer
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -28,17 +29,31 @@ const Header = () => {
           <h1 className="hero-title">
             {title} <span className="text-color-main">{name}</span>
             <br />
-            {subtitle}
+            <span className="subtitle">{subtitle}</span>
           </h1>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
           <p className="hero-cta">
-            <span className="cta-btn cta-btn--hero">
-              <Link to="about" smooth duration={1000}>
-                {cta}
-              </Link>
+            <span className="social-links">
+            {networks &&
+              networks.map((network) => {
+                const { id, name, url } = network;
+                if (url === '') return
+                return (
+                  <a key={id} href={url} rel="noopener noreferrer" target="_blank" aria-label={name}>
+                    <i className={`fa fa-${name} fa-lg`} />
+                  </a>
+                );
+              })}
             </span>
-          </p>
+            </p>
+        </Fade>
+        <Fade bottom={true} duration={1000} delay={1000} distance="30px">
+          <span className="down-to-about">
+            <Link to="about" smooth duration={1000}>
+              <i className="fa fa-angle-down fa-2x" aria-hidden="true" />
+            </Link>
+          </span>
         </Fade>
       </Container>
     </section>

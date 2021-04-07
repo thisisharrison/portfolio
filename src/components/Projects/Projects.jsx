@@ -49,7 +49,7 @@ const Projects = () => {
                       <h3 className="project-wrapper__text-title">{title}</h3>
                       <div>
                         <p>{info}</p>
-                        <p className="mb-4">{info2}</p>
+                        <p className="project-wrapper__text-tech mb-4">{info2}</p>
                       </div>
                       <a
                         target="_blank"
@@ -78,7 +78,7 @@ const Projects = () => {
                     right={isDesktop}
                     bottom={isMobile}
                     duration={1000}
-                    delay={1000}
+                    delay={800}
                     distance="30px"
                   >
                     <div className="project-wrapper__image"

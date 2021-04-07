@@ -47,6 +47,11 @@
     @include respond(phone-xs) {
       font-size: 2.8rem;
     }
+    .subtitle {
+      font-weight: 400;
+      font-size: 80%;
+      color: #8892B0;
+    }
   }
 
   .hero-cta {
@@ -64,11 +69,35 @@
       }
     }
   }
+  i {
+    color: $dark-blue-text;
+    transition: color .5s ease-in-out;
+  }
+  .down-to-about i {
+    bottom: 2rem; 
+    position: absolute;
+    color: $dark-blue-text;
+    margin: 1rem 0 $default-font-size;
+    transition: all .5s ease-in;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(4px);
+    }
+  }
 }
 .dark #hero {
   background: transparent;
   h1 {
-    color: #CCD6F6;
+    color: $light-purple-text;
+    transition: color .5s ease-in-out;
+  }
+  .down-to-about i {
+    color: $white-color;
+    transition: all .5s ease-in-out;
+  }
+  i {
+    color: $white-color;
     transition: color .5s ease-in-out;
   }
 }

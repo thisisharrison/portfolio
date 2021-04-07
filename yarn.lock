@@ -949,7 +949,7 @@
     "core-js-pure" "^3.0.0"
     "regenerator-runtime" "^0.13.4"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.11.2", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
   "version" "7.13.10"
   dependencies:
     "regenerator-runtime" "^0.13.4"
@@ -6683,6 +6683,14 @@
     "lodash" "^4.17.15"
     "micromatch" "^3.1.10"
 
+"gatsby-plugin-google-analytics@^3.2.0":
+  "integrity" "sha512-Cc/Gh6fkZWta6h+ieRjU/4GuN5wMGfiP+rv1EylLYUpTS/BSZf5sUqBsJbwWerPyKXkGJ35YaYWa5Vkzu4lBZw=="
+  "resolved" "https://registry.npmjs.org/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-3.2.0.tgz"
+  "version" "3.2.0"
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "minimatch" "3.0.4"
+
 "gatsby-plugin-manifest@^2.4.12":
   "integrity" "sha512-yWrAGS/LN9MEbtllG9ZsU4mIAQZJsfzdpq3YL3HO6LYJWGngD/JzkXUfOYhH5cT/WVgU5vMxkcyFrwj0J5xWNw=="
   "resolved" "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.4.14.tgz"
@@ -6904,7 +6912,7 @@
     "semver" "^5.7.1"
     "sharp" "^0.25.1"
 
-"gatsby@^2.0.0", "gatsby@^2.12.1", "gatsby@^2.2.0", "gatsby@^2.23.7", "gatsby@^2.4.0", "gatsby@>2.0.15":
+"gatsby@^2.0.0", "gatsby@^2.12.1", "gatsby@^2.2.0", "gatsby@^2.23.7", "gatsby@^2.4.0", "gatsby@^3.0.0-next.0", "gatsby@>2.0.15":
   "integrity" "sha512-ozEqqXt3pxXU73gYNTdLesBr6GKPmPFOo/+Yjl/Le5wseyWQ5fH+JauLmpFvOlRa/jGLOPNMC4xTJsEMm3Vxgg=="
   "resolved" "https://registry.yarnpkg.com/gatsby/-/gatsby-2.23.11.tgz"
   "version" "2.23.11"
@@ -8940,9 +8948,6 @@
   "resolved" "https://registry.yarnpkg.com/jpeg-js/-/jpeg-js-0.3.7.tgz"
   "version" "0.3.7"
 
-"jquery@1.9.1 - 3":
-  "version" "3.6.0"
-
 "js-base64@^2.1.8":
   "integrity" "sha512-1hgLrLIrmCgZG+ID3VoLNLOSwjGnoZa8tyrUdEteMeIzsT6PH7PMLyUvbDwzNE56P3PNxyvuIOx4Uh2E5rzQIw=="
   "resolved" "https://registry.yarnpkg.com/js-base64/-/js-base64-2.6.2.tgz"
@@ -9847,7 +9852,7 @@
   "resolved" "https://registry.yarnpkg.com/minimalistic-crypto-utils/-/minimalistic-crypto-utils-1.0.1.tgz"
   "version" "1.0.1"
 
-"minimatch@^3.0.3", "minimatch@^3.0.4", "minimatch@~3.0.2":
+"minimatch@^3.0.3", "minimatch@^3.0.4", "minimatch@~3.0.2", "minimatch@3.0.4":
   "integrity" "sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA=="
   "resolved" "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.4.tgz"
   "version" "3.0.4"
@@ -11197,9 +11202,6 @@
   dependencies:
     "ts-pnp" "^1.1.6"
 
-"popper.js@^1.16.0":
-  "version" "1.16.1"
-
 "portfinder@^1.0.26":
   "integrity" "sha512-Xi7mKxJHHMI3rIUrnm/jjUgwhbYMkp/XKEcZX3aG4BrumLpq3nmoQMX+ClYnDZnZ/New7IatC1no5RX0zo1vXQ=="
   "resolved" "https://registry.yarnpkg.com/portfinder/-/portfinder-1.0.26.tgz"
@@ -11992,7 +11994,7 @@
     "strip-ansi" "3.0.1"
     "text-table" "0.2.0"
 
-"react-dom@^15.0.0 || ^16.0.0", "react-dom@^15.0.0 || ^16.0.0-beta || ^16.0.0", "react-dom@^15.5.4 || ^16.0.0", "react-dom@^16.13.1", "react-dom@^16.4.2", "react-dom@>= 15.3.0 < 18", "react-dom@>=16.3.0", "react-dom@>=16.6.0", "react-dom@>=16.8.0", "react-dom@15.x || 16.x || 16.4.0-alpha.0911da3":
+"react-dom@^15.0.0 || ^16.0.0", "react-dom@^15.0.0 || ^16.0.0-beta || ^16.0.0", "react-dom@^15.5.4 || ^16.0.0", "react-dom@^16.13.1", "react-dom@^16.4.2", "react-dom@^16.9.0 || ^17.0.0", "react-dom@>= 15.3.0 < 18", "react-dom@>=16.3.0", "react-dom@>=16.6.0", "react-dom@>=16.8.0", "react-dom@15.x || 16.x || 16.4.0-alpha.0911da3":
   "integrity" "sha512-81PIMmVLnCNLO/fFOQxdQkvEq/+Hfpv24XNJfpyZhTRfO0QcmQIF/PgCa1zCOj2w1hrn12MFLyaJ/G0+Mxtfag=="
   "resolved" "https://registry.yarnpkg.com/react-dom/-/react-dom-16.13.1.tgz"
   "version" "16.13.1"
@@ -12134,7 +12136,7 @@
     "loose-envify" "^1.4.0"
     "prop-types" "^15.6.2"
 
-"react@^0.14.0 || ^15.0.0 || ^16.0.0", "react@^15.0.0 || ^16.0.0", "react@^15.0.0 || ^16.0.0-beta || ^16.0.0", "react@^15.3.0 || ^16.0.0", "react@^15.5.4 || ^16.0.0", "react@^16.0.0", "react@^16.13.1", "react@^16.3.0", "react@^16.4.2", "react@^16.8.0", "react@^16.8.2", "react@^16.9.0", "react@>= 15.3.0 < 18", "react@>= 16.8.0", "react@>=0.14.0", "react@>=15.0.0", "react@>=16.3.0", "react@>=16.3.2", "react@>=16.6.0", "react@>=16.8.0", "react@15.x || 16.x || 16.4.0-alpha.0911da3":
+"react@^0.14.0 || ^15.0.0 || ^16.0.0", "react@^15.0.0 || ^16.0.0", "react@^15.0.0 || ^16.0.0-beta || ^16.0.0", "react@^15.3.0 || ^16.0.0", "react@^15.5.4 || ^16.0.0", "react@^16.0.0", "react@^16.13.1", "react@^16.3.0", "react@^16.4.2", "react@^16.8.0", "react@^16.8.2", "react@^16.9.0", "react@^16.9.0 || ^17.0.0", "react@>= 15.3.0 < 18", "react@>= 16.8.0", "react@>=0.14.0", "react@>=15.0.0", "react@>=16.3.0", "react@>=16.3.2", "react@>=16.6.0", "react@>=16.8.0", "react@15.x || 16.x || 16.4.0-alpha.0911da3":
   "integrity" "sha512-YMZQQq32xHLX0bz5Mnibv1/LHb3Sqzngu7xstSM+vrkE5Kzr9xE0yMByK5kMoTK30YVJE61WfbxIFFvfeDKT1w=="
   "resolved" "https://registry.yarnpkg.com/react/-/react-16.13.1.tgz"
   "version" "16.13.1"
@@ -14543,9 +14545,6 @@
   "integrity" "sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c="
   "resolved" "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz"
   "version" "0.0.6"
-
-"typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta":
-  "version" "4.2.3"
 
 "ua-parser-js@^0.7.18":
   "integrity" "sha512-+O8/qh/Qj8CgC6eYBVBykMrNtp5Gebn4dlGD/kKXVkJNDwyrAwSIqwz8CDf+tsAIWVycKcku6gIXJ0qwx/ZXaQ=="

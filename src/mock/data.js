@@ -12,30 +12,24 @@ export const heroData = {
   title: 'Hello, my name is',
   name: 'Harrison',
   subtitle: 'Software Engineer',
-  cta: 'to-do',
+  cta: 'to-do', // Using network buttons instead
 };
 
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.jpeg',
   paragraphOne:
-    'Motivated full-stack software engineer with a passion for problem solving and product engineering.',
+    'Motivated full-stack software engineer with a passion for problem-solving and digital products.',
   paragraphTwo:
-    'My solid experience in the e-commerce industry enable me to understand business processes and anticipate users’ requirements. With a strong interest in systems and optimization, I have incorporated programming tools to automate and streamline workflows, developed data analytic tools, and increased operation efficiency.',
-  // 'Prior to pursuing my passion for software, I incorporated programming tools to automate and streamline workflows, and developed data analytics tools in the e-commerce industry.',
+    `My solid experience in the e-commerce industry enables me to understand business processes and anticipate users’ requirements. 
+    With a strong interest in systems and optimization, I have incorporated programming in automating workflows, 
+    developing data analytic tools, and increasing operational efficiency.`,
+  // V2: 'Prior to pursuing my passion for software, I incorporated programming tools to automate and streamline workflows, and developed data analytics tools in the e-commerce industry.',
   paragraphThree:
-    "My keen interest in digital products and solving users' problems have led me to pursure a career in software.",
+    "My keen interest in product engineering and solving users' problems have led me to pursue a career in software.",
   paragraphFour: "Here are a few technologies I've been working with recently:",
-  technologies: [
-    'Javascript',
-    'Node.js',
-    'React',
-    'Redux',
-    'Ruby',
-    'Rails',
-    'Python',
-  ],
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  technologies: ['Javascript', 'Node.js', 'React', 'Redux', 'Ruby', 'Rails', 'Python'],
+  resume: 'https://www.dropbox.com/s/krtegk2b287cpop/Harrison_Lau.pdf?dl=0', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
@@ -46,8 +40,8 @@ export const projectsData = [
     video: '',
     title: 'lulukittens',
     info:
-      'A class booking platform for trainers and students. Created as mini-site for an e-commerce brand to tie community and commerce.',
-    info2: 'Built with MERN, Redux, Material-UI, and Styled-Components.',
+      'A class booking platform for trainers and students. Created as mini-site for an e-commerce brand to connect community and commerce.',
+    info2: 'React, Redux, MongoDB, Express, Node.js',
     url: 'https://hidden-retreat-15215.herokuapp.com/',
     repo: 'https://github.com/thisisharrison/class-pass-app', // if no repo, the button will not show up
   },
@@ -57,8 +51,8 @@ export const projectsData = [
     video: '',
     title: 'Algo Visualizer',
     info:
-      'An algorithm visualizer to educate users on how different algorithms work and the differences in their run time.',
-    info2: 'Built with React and Redux.',
+      'An algorithm visualizer to educate users on how different sorting algorithms work and the differences of their run time.',
+    info2: 'React, Redux',
     url: 'https://thisisharrison.github.io/algo-visualizer/',
     repo: 'https://github.com/thisisharrison/algo-visualizer', // if no repo, the button will not show up
   },
@@ -69,7 +63,7 @@ export const projectsData = [
     title: 'SolutionBase',
     info:
       'An idea exchange application targeting problem-solvers to brainstorm solutions to United Nations 17 Sustainable Development Goals.',
-    info2: 'Built with Ruby, Ruby on Rails, React, Redux, Boostrap, and Styled-Components',
+    info2: 'React, Redux, Ruby, Ruby on Rails, PostgreSQL',
     url: 'https://solution-base.herokuapp.com/',
     repo: 'https://github.com/thisisharrison/solution-base', // if no repo, the button will not show up
   },
@@ -99,6 +93,7 @@ export const projectsData = [
 export const contactData = {
   cta: '',
   btn: '',
+  fullname: 'Harrison Lau',
   email: 'harrison.lau@outlook.com',
 };
 

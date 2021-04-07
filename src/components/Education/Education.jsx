@@ -13,7 +13,7 @@ const Education = () => {
       <Container>
         <section id="education-school">
           <Title title="Education" />
-          <Fade bottom duration={1000} delay={800} distance="30px">
+          <Fade bottom duration={800} delay={500} distance="30px">
             {schools && schools.map((school, i) => {
               return (
                 <div key={`school-${i}`}>
@@ -27,7 +27,7 @@ const Education = () => {
 
         <section id="education-certifications">
           <Title title="Certifications" />
-          <Fade bottom duration={1000} delay={800} distance="30px">
+          <Fade bottom duration={800} delay={500} distance="30px">
             {certifications && certifications.map((cert, i) => {
               return (
                 <div key={`cert-${i}`}>
