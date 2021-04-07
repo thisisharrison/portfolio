@@ -14,6 +14,8 @@ module.exports = {
     'react/static-property-placement': 'off', // disable if necessary
     'react/jsx-props-no-spreading': 'off', // disable if necessary
     'react/require-default-props': 'off',
+    'no-underscore-dangle': 'off',
+    'jsx-a11y/alt-text': 'off',
   },
   parser: 'babel-eslint',
 };
