@@ -19,11 +19,11 @@ export const heroData = {
 export const aboutData = {
   img: 'profile.jpeg',
   paragraphOne:
-    'Motivated full-stack software engineer with a passion for problem solving and digital products.',
+    'Motivated full-stack software engineer with a passion for problem-solving and digital products.',
   paragraphTwo:
     `My solid experience in the e-commerce industry enables me to understand business processes and anticipate users’ requirements. 
     With a strong interest in systems and optimization, I have incorporated programming in automating workflows, 
-    developing data analytic tools, and increasing operation efficiency.`,
+    developing data analytic tools, and increasing operational efficiency.`,
   // V2: 'Prior to pursuing my passion for software, I incorporated programming tools to automate and streamline workflows, and developed data analytics tools in the e-commerce industry.',
   paragraphThree:
     "My keen interest in product engineering and solving users' problems have led me to pursue a career in software.",

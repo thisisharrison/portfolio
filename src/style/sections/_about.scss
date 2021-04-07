@@ -125,6 +125,13 @@
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
     place-items: center start;
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+      margin-bottom: 0;
+      .about-wrapper__contact {
+        margin-bottom: 2rem;
+      }
+    }
   }
   .about-wrapper__contact {
     text-align: left;
