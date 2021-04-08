@@ -75,9 +75,13 @@
   }
   .down-to-about {
     bottom: 2rem; 
-    left: 50%;
+    left: 0;
+    width: 100%;
+    display: grid;
+    place-items: center;
     position: absolute;
     i {
+      display: block;
       color: $dark-blue-text;
       margin: 1rem 0 $default-font-size;
       transition: all .5s ease-in;
