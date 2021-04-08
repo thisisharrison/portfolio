@@ -73,16 +73,22 @@
     color: $dark-blue-text;
     transition: color .5s ease-in-out;
   }
-  .down-to-about i {
+  .down-to-about {
     bottom: 2rem; 
+    left: 0;
+    width: 100%;
+    display: grid;
+    place-items: center;
     position: absolute;
-    color: $dark-blue-text;
-    margin: 1rem 0 $default-font-size;
-    transition: all .5s ease-in;
-    cursor: pointer;
-
-    &:hover {
-      transform: translateY(4px);
+    i {
+      display: block;
+      color: $dark-blue-text;
+      margin: 1rem 0 $default-font-size;
+      transition: all .5s ease-in;
+      cursor: pointer;
+      &:hover {
+        transform: translateY(4px);
+      }
     }
   }
 }
