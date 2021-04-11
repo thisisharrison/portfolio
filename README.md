@@ -1,4 +1,4 @@
-# My portfolio site
+# [My portfolio site](https://harrisonlau.com/)
 
 ## Getting Started 🚀
 
@@ -18,7 +18,6 @@ $ npm run develop
 - [GraphQL](https://graphql.org/) - Query language for APIs
 - [React](https://es.reactjs.org/) - Front-End JavaScript library
 - [Bootstrap 4](https://getbootstrap.com/docs/4.3/getting-started/introduction/) - Front-End UI library
-- [Styled-Components](https://github.com/styled-components/styled-components) - Styling React component
 - [Sass](https://sass-lang.com/documentation) - CSS extension language
 
 ## Status
@@ -27,5 +26,6 @@ $ npm run develop
 
 ## Acknowledgments 🎁
 
-- **Jacobo Martinez** - [https://github.com/cobidev](https://github.com/cobidev)
-- **Gatsby-Simplefolio** - [https://github.com/cobidev/gatsby-simplefolio](https://github.com/cobidev/gatsby-simplefolio)
+- Forked from **Gatsby-Simplefolio** with new features and small tweaks - [https://github.com/cobidev/gatsby-simplefolio](https://github.com/cobidev/gatsby-simplefolio)
+- Simplefolio's Author: **Jacobo Martinez** - [https://github.com/cobidev](https://github.com/cobidev)
+- Dark Mode Inspiration: **Overreacted.io** - [https://github.com/gaearon/overreacted.io](https://github.com/gaearon/overreacted.io)

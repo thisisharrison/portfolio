@@ -20,8 +20,7 @@ export const aboutData = {
   img: 'profile.jpeg',
   paragraphOne:
     'Motivated full-stack software engineer with a passion for problem-solving and digital products.',
-  paragraphTwo:
-    `My solid experience in the e-commerce industry enables me to understand business processes and anticipate users’ requirements. 
+  paragraphTwo: `My solid experience in the e-commerce industry enables me to understand business processes and anticipate users’ requirements. 
     With a strong interest in systems and optimization, I have incorporated programming in automating workflows, 
     developing data analytic tools, and increasing operational efficiency.`,
   // V2: 'Prior to pursuing my passion for software, I incorporated programming tools to automate and streamline workflows, and developed data analytics tools in the e-commerce industry.',
@@ -42,7 +41,7 @@ export const projectsData = [
     info:
       'A class booking platform for trainers and students. Created as mini-site for an e-commerce brand to connect community and commerce.',
     info2: 'React, Redux, MongoDB, Express, Node.js',
-    url: 'https://hidden-retreat-15215.herokuapp.com/',
+    url: 'https://lulukitten.herokuapp.com/#/',
     repo: 'https://github.com/thisisharrison/class-pass-app', // if no repo, the button will not show up
   },
   {
