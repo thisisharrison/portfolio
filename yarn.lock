@@ -12038,7 +12038,7 @@
   dependencies:
     "github-buttons" "^2.8.0"
 
-"react-helmet-async@^1":
+"react-helmet-async@^1", "react-helmet-async@^1.0.9":
   "integrity" "sha512-N+iUlo9WR3/u9qGMmP4jiYfaD6pe9IvDTapZLFJz2D3xlTlCM1Bzy4Ab3g72Nbajo/0ZyW+W9hdz8Hbe4l97pQ=="
   "resolved" "https://registry.npmjs.org/react-helmet-async/-/react-helmet-async-1.0.9.tgz"
   "version" "1.0.9"
