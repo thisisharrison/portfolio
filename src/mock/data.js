@@ -27,7 +27,7 @@ export const aboutData = {
   paragraphThree:
     "My keen interest in product engineering and solving users' problems have led me to pursue a career in software.",
   paragraphFour: "Here are a few technologies I've been working with recently:",
-  technologies: ['Javascript', 'Node.js', 'React', 'Redux', 'Ruby', 'Rails', 'Python'],
+  technologies: ['TypeScript', 'React', 'Redux', 'Node.js', 'Python', 'Ruby', 'Rails'],
   resume: 'https://www.dropbox.com/s/8v1cu08medlgw6z/Harrison_Lau.pdf?dl=0', // if no resume, the button will not show up
 };
 
